@@ -4,9 +4,9 @@
 [ext_resource type="Script" path="res://main.gd" id="1_lfjyf"]
 
 [node name="Node" type="Node"]
-script = ExtResource( "1_lfjyf" )
+script = ExtResource("1_lfjyf")
 
-[node name="Test" parent="." instance=ExtResource( "1_82rxf" )]
+[node name="Test" parent="." instance=ExtResource("1_82rxf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1e+06, 1e+06, 1e+06)
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
@@ -17,18 +17,13 @@ offset_bottom = 40.0
 theme_override_constants/separation = 16
 
 [node name="Button" type="Button" parent="HBoxContainer"]
-rect_min_size = Vector2(200, 0)
-offset_right = 200.0
-offset_bottom = 34.0
+layout_mode = 2
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_colors/font_color = Color(0.87451, 0.87451, 0.87451, 1)
 text = "Go close to origin"
 
 [node name="Label" type="Label" parent="HBoxContainer"]
-offset_left = 216.0
-offset_top = 4.0
-offset_right = 232.0
-offset_bottom = 30.0
+layout_mode = 2
 text = "---"
 
 [connection signal="pressed" from="HBoxContainer/Button" to="." method="_on_button_pressed"]

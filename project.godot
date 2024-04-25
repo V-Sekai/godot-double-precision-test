@@ -11,5 +11,6 @@ config_version=5
 [application]
 
 config/name="Test Doubles"
+run/main_scene="res://main.tscn"
+config/features=PackedStringArray("4.3", "Double Precision")
 config/icon="res://icon.png"
-config/features=PackedStringArray("4.0", "Double Precision", "Vulkan Clustered")
